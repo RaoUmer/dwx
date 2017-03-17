@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> Find Car</title>
+
+<!-- Fonts -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="../static/styles/index.css">
+<link rel="stylesheet" href="../static/styles/slideshow.css">
+<link rel="stylesheet" href="../static/styles/visualeffects.css">
+<link rel="stylesheet" href="../static/styles/parallax.css">
+
+</head>
+
+<body id="myPage">
+<!-- Header -->
+<div class="icon-bar">
+  <a class="active" href="/"><i class="fa fa-home"></i></a>
+  <a href="/search"><i class="fa fa-search"></i></a>
+  <!-- <a href="#"><i class="fa fa-car"></i></a> -->
+  <a href="http://raoumer.github.io/"><i class="fa fa-globe"></i></a>
+  <!-- <a href="#"><i class="fa fa-trash"></i></a> -->
+  <a href="https://github.com/RaoUmer/"><i class="fa fa-github-alt"></i></a>
+  <a href="/contact"><i class="fa fa-envelope"></i></a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="../static/images/car1.jpg" style="width:100%" class="contrast" alt="car">
+  <div class="text">Car</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="../static/images/car3.jpg" style="width:100%" class="contrast" alt="car">
+  <div class="text">Car</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="../static/images/car4.jpg" style="width:100%" class="contrast" alt="car">
+  <div class="text">Car</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="../static/images/car5.jpg" style="width:100%" class="contrast" alt="car">
+  <div class="text">Car</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="../static/images/car7.jpg" style="width:100%" class="contrast" alt="car">
+  <div class="text">Car</div>
+</div>
+</div>
+
+<!--
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/img_fjords_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+-->
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<!-- Container -->
+<div class="w3-container w3-padding-64 w3-center">
+<h2>OUR TEAM</h2>
+<p>Meet the team:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="../static/images/afsar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Dr. Fayyaz-ul-Amir</h3>
+  <p>Senior Scientist</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="../static/images/abid.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Dr. Muhammad Abid</h3>
+  <p>Principal Scientist</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="../static/images/raoumer.jpg" alt="Developer" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Rao Muhammad Umer</h3>
+  <p>Developer</p>
+</div>
+
+</div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">SCROLL DOWN</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Parallax Demo</h3>
+  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border" color="white">COOL!</span>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+</body>
+</html>
+

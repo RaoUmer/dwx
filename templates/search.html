@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> Find Car</title>
+
+<!-- Fonts -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+
+<!-- jQuery -->
+<script type="text/javascript" src="../static/js/jquery-1.7.1.min.js"></script>
+
+<!-- jQuery Easing -->
+<script type="text/javascript" src="../static/js/jquery.easing.1.3.js"></script>
+
+<!-- Functions -->
+<script type="text/javascript" src="../static/js/functions.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="../static/styles/search.css" >
+<link rel="stylesheet" href="../static/styles/index.css">
+<link rel="stylesheet" href="../static/styles/slideshow.css">
+<link rel="stylesheet" href="../static/styles/visualeffects.css">
+<link rel="stylesheet" href="../static/styles/parallax.css">
+
+</head>
+
+<body id="myPage">
+<!-- Header -->
+<div class="icon-bar">
+  <a class="active" href="/"><i class="fa fa-home"></i></a>
+  <a href="/search"><i class="fa fa-search"></i></a>
+  <!-- <a href="#"><i class="fa fa-car"></i></a> -->
+  <a href="http://raoumer.github.io/"><i class="fa fa-globe"></i></a>
+  <!-- <a href="#"><i class="fa fa-trash"></i></a> -->
+  <a href="https://github.com/RaoUmer/"><i class="fa fa-github-alt"></i></a>
+  <a href="/contact"><i class="fa fa-envelope"></i></a>
+</div>
+
+<!-- form detection -->
+<!--
+<div id="search-form">
+			<form class="form-container" action="/formdetection" method="post">
+				<input type="text" class="search-field" value="Type search text here..." name="query"/>
+				<div class="submit-container">
+					<input type="submit" class="submit" value="" />
+				</div>
+			</form>
+			<div class="popup">
+				<p>Please fill out this field.</p>
+			</div>
+</div>
+-->
+
+<!-- form auto fill -->
+<!--
+<div id="search-form">
+			<form class="form-container" action="/searchquery" method="post">
+				<input type="text" class="search-field" value="Type search text here..." name="squery"/>
+				<div class="submit-container">
+					<input type="submit" class="submit" value="" />
+				</div>
+			</form>
+			<div class="popup">
+				<p>Please fill out this field.</p>
+			</div>
+</div>
+-->
+
+<!-- Search Result Form -->
+<div id="search-form">
+			<form class="form-container" action="/results" method="POST">
+				<input type="text" class="search-field" value="Type search text here..." name="query"/>
+				<select name="min" class="search-field">
+					<option value="0">Min</option>
+					<option value="100000">Rs100000</option>
+					<option value="200000">Rs200000</option>
+					<option value="300000">Rs300000</option>
+					<option value="400000">Rs400000</option>
+					<option value="500000">Rs500000</option>
+					<option value="600000">Rs600000</option>
+					<option value="700000">Rs700000</option>
+					<option value="800000">Rs800000</option>
+					<option value="900000">Rs900000</option>
+					<option value="1000000">Rs1000000</option>
+					<option value="1500000">Rs1500000</option>
+					<option value="2000000">Rs2000000</option>
+					<option value="3000000">Rs3000000</option>
+				</select>
+				<select name="max" class="search-field">
+					<option value="0">Max</option>
+					<option value="100000">Rs100000</option>
+					<option value="200000">Rs200000</option>
+					<option value="300000">Rs300000</option>
+					<option value="400000">Rs400000</option>
+					<option value="500000">Rs500000</option>
+					<option value="600000">Rs600000</option>
+					<option value="700000">Rs700000</option>
+					<option value="800000">Rs800000</option>
+					<option value="900000">Rs900000</option>
+					<option value="1000000">Rs1000000</option>
+					<option value="1500000">Rs1500000</option>
+					<option value="2000000">Rs2000000</option>
+					<option value="3000000">Rs3000000</option>
+				</select>
+
+				<div class="submit-container">
+					<input type="submit" class="submit" value="" />
+				</div>
+			</form>
+			<div class="popup">
+				<p>Please fill out this field.</p>
+			</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+</body>
+</html>
